@@ -33,7 +33,7 @@ export default function HowItWorks() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {/* Connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-1/6 right-1/6 h-px bg-gradient-to-r from-transparent via-amber-600/30 to-transparent" />
+          <div className="hidden md:block absolute top-8 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-amber-600/30 to-transparent" />
 
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col items-center text-center relative">

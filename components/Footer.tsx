@@ -1,9 +1,10 @@
 import Link from "next/link";
-
-const BUSINESS_NAME = process.env.NEXT_PUBLIC_BUSINESS_NAME ?? "ProTint Auto";
-const BUSINESS_PHONE = process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "(555) 123-4567";
-const BUSINESS_ADDRESS = process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ?? "123 Main St, City, ST 00000";
-const BUSINESS_EMAIL = process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "info@protintauto.com";
+import {
+  BUSINESS_NAME,
+  BUSINESS_PHONE,
+  BUSINESS_ADDRESS,
+  BUSINESS_EMAIL,
+} from "@/config/business";
 
 export default function Footer() {
   return (

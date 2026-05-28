@@ -3,11 +3,10 @@ import {
   BUSINESS_HOURS,
   OPEN_DAYS,
   SLOT_DURATION_MINUTES,
-  BUSINESS_NAME,
   BUSINESS_ADDRESS,
 } from "@/config/business";
 import type { TimeSlot, BookingRequest } from "@/lib/types";
-import { format, addMinutes, startOfDay, setHours, parseISO } from "date-fns";
+import { format, addMinutes, startOfDay, setHours, addDays, parseISO } from "date-fns";
 
 function getCalendarClient() {
   const auth = new google.auth.JWT({
@@ -111,10 +110,9 @@ export async function getTomorrowEvents(): Promise<
   const calendar = getCalendarClient();
   const calendarId = process.env.GOOGLE_CALENDAR_ID ?? "primary";
 
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const dayStart = setHours(startOfDay(tomorrow), 0);
-  const dayEnd = setHours(startOfDay(tomorrow), 23);
+  const tomorrow = addDays(startOfDay(new Date()), 1);
+  const dayStart = tomorrow;
+  const dayEnd = addDays(tomorrow, 1); // exclusive upper bound: start of day after tomorrow
 
   const res = await calendar.events.list({
     calendarId,

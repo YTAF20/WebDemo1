@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
-const BUSINESS_NAME = process.env.NEXT_PUBLIC_BUSINESS_NAME ?? "ProTint Auto";
+import { BUSINESS_NAME } from "@/config/business";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
