@@ -35,13 +35,13 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-4 sm:px-6 bg-[#0a0a0a]">
+    <section id="services" className="py-24 px-4 sm:px-6 bg-black/70">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="text-amber-500 text-xs font-semibold uppercase tracking-widest">Our Service Menu</span>
+          <span className="text-red-500 text-xs font-semibold uppercase tracking-widest">Our Service Menu</span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-bold">What We Offer</h2>
           <p className="mt-4 text-zinc-400 max-w-xl mx-auto">
-            From precision window tinting to paint protection and color wraps, we use premium materials and certified techniques to elevate your ride.
+            Premium materials and certified techniques to protect and style your vehicle.
           </p>
         </div>
 
@@ -49,15 +49,15 @@ export default function Services() {
           {services.map((s) => (
             <div
               key={s.title}
-              className="relative bg-[#111827] border border-white/5 rounded-xl p-7 hover:border-amber-600/40 transition-all group"
+              className="relative bg-[#111827] border border-white/5 rounded-xl p-7 hover:border-red-600/40 transition-all group"
             >
               {s.badge && (
-                <span className="absolute top-4 right-4 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-600/20 text-amber-400 border border-amber-600/30">
+                <span className="absolute top-4 right-4 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-600/30">
                   {s.badge}
                 </span>
               )}
               <div className="text-3xl mb-4">{s.icon}</div>
-              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-500 transition-colors">
                 {s.title}
               </h3>
               <p className="text-zinc-400 text-sm leading-relaxed">{s.description}</p>
@@ -65,16 +65,16 @@ export default function Services() {
           ))}
 
           {/* CTA card */}
-          <div className="bg-gradient-to-br from-amber-600/20 to-amber-800/10 border border-amber-600/30 rounded-xl p-7 flex flex-col justify-between">
+          <div className="bg-gradient-to-br from-red-950/30 to-zinc-900/10 border border-red-900/30 rounded-xl p-7 flex flex-col justify-between">
             <div>
-              <h3 className="text-lg font-bold text-amber-400 mb-2">Ready to Book?</h3>
+              <h3 className="text-lg font-bold text-red-500 mb-2">Ready to Book?</h3>
               <p className="text-zinc-400 text-sm">
                 Reserve your slot online and get a customized quote confirmed before or at your appointment.
               </p>
             </div>
             <Link
               href="/book"
-              className="mt-6 inline-block text-center px-5 py-3 bg-amber-600 hover:bg-amber-500 text-white font-semibold rounded-lg text-sm transition-colors"
+              className="mt-6 inline-block text-center px-5 py-3 bg-red-600 hover:bg-red-500 text-white font-semibold rounded-lg text-sm transition-colors"
             >
               Book an Appointment →
             </Link>

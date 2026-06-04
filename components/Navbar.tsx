@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        <Link href="/" className="text-xl font-bold text-amber-500 tracking-wide">
+        <Link href="/" className="text-xl font-bold text-red-500 tracking-wide">
           {BUSINESS_NAME}
         </Link>
 
@@ -18,6 +18,9 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <a href="#services" className="text-sm text-zinc-400 hover:text-white transition-colors">
             Services
+          </a>
+          <a href="#work" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            Our Work
           </a>
           <a href="#how-it-works" className="text-sm text-zinc-400 hover:text-white transition-colors">
             How It Works
@@ -40,7 +43,7 @@ export default function Navbar() {
           </a>
           <Link
             href="/book"
-            className="px-5 py-2 bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold rounded-md transition-colors"
+            className="px-5 py-2 bg-red-600 hover:bg-red-500 text-white text-sm font-semibold rounded-md transition-colors"
           >
             Book Now
           </Link>
@@ -66,6 +69,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-black/95 border-t border-white/5 px-4 py-4 flex flex-col gap-4">
           <a href="#services" className="text-sm text-zinc-400 hover:text-white" onClick={() => setOpen(false)}>Services</a>
+          <a href="#work" className="text-sm text-zinc-400 hover:text-white" onClick={() => setOpen(false)}>Our Work</a>
           <a href="#how-it-works" className="text-sm text-zinc-400 hover:text-white" onClick={() => setOpen(false)}>How It Works</a>
           <a href="#contact" className="text-sm text-zinc-400 hover:text-white" onClick={() => setOpen(false)}>Contact</a>
           <a
@@ -84,7 +88,7 @@ export default function Navbar() {
           </a>
           <Link
             href="/book"
-            className="px-5 py-2 bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold rounded-md text-center transition-colors"
+            className="px-5 py-2 bg-red-600 hover:bg-red-500 text-white text-sm font-semibold rounded-md text-center transition-colors"
             onClick={() => setOpen(false)}
           >
             Book Now

@@ -11,7 +11,7 @@ export default function BookPage() {
       const cal = await getCalApi();
       cal("ui", {
         theme: "dark",
-        styles: { branding: { brandColor: "#d97706" } },
+        styles: { branding: { brandColor: "#dc2626" } },
         hideEventTypeDetails: false,
         layout: "month_view",
       });
@@ -25,19 +25,19 @@ export default function BookPage() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-10 pt-8">
-            <span className="text-amber-500 text-xs font-semibold uppercase tracking-widest">
+            <span className="text-red-500 text-xs font-semibold uppercase tracking-widest">
               Online Booking
             </span>
             <h1 className="mt-2 text-4xl font-bold">Book Your Appointment</h1>
             <p className="mt-3 text-zinc-400">
-              Select an available time slot below to schedule your tint job.
+              Select an available time slot below to schedule your styling service.
             </p>
           </div>
 
           {/* Pricing Disclaimer */}
-          <div className="mb-8 p-4 rounded-xl bg-amber-600/10 border border-amber-600/20 text-center max-w-2xl mx-auto">
+          <div className="mb-8 p-4 rounded-xl bg-red-600/10 border border-red-600/20 text-center max-w-2xl mx-auto">
             <p className="text-sm text-zinc-300">
-              <span className="text-amber-500 font-semibold">Note:</span> Appointments are free to book online. Final pricing is based on your vehicle size, window count, and tint film preference, and will be confirmed via phone/text or at the start of your appointment.
+              <span className="text-red-500 font-semibold">Note:</span> Appointments are free to book online. Final pricing is based on your vehicle model/size, surface condition, and styling preferences, and will be confirmed via phone/text or at the start of your appointment.
             </p>
           </div>
 

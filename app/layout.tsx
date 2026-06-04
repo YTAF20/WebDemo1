@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Alex_Brush } from "next/font/google";
 import "./globals.css";
+import ScrollRestoration from "@/components/ScrollRestoration";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const alexBrush = Alex_Brush({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-signature",
+});
 
 export const metadata: Metadata = {
-  title: "ProTint Auto | Professional Window Tinting",
+  title: "Qualitints | Automotive Styling, Window Tinting & Detailing",
   description:
-    "Premium window tinting for cars, trucks, and SUVs. Book your appointment online and get fast, professional service.",
+    "Premium nano-ceramic window tinting, professional detailing, paint protection film (PPF), and vehicle wraps. Precision plotter-cut fit with lifetime warranty.",
 };
 
 export default function RootLayout({
@@ -16,8 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="bg-[#0a0a0a] text-white antialiased">{children}</body>
+    <html lang="en" className={`${inter.variable} ${alexBrush.variable}`}>
+      <body className="text-white antialiased bg-[#0a0a0a]">
+        <ScrollRestoration />
+        {children}
+      </body>
     </html>
   );
 }

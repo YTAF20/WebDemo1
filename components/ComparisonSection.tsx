@@ -2,26 +2,26 @@
 
 export default function ComparisonSection() {
   return (
-    <section id="comparisons" className="py-24 px-4 sm:px-6 bg-[#0d0d0d] border-t border-b border-white/5">
+    <section id="comparisons" className="py-24 px-4 sm:px-6 bg-black/70 border-t border-b border-white/5">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-amber-500 text-xs font-semibold uppercase tracking-widest">
+          <span className="text-red-500 text-xs font-semibold uppercase tracking-widest">
             The Qualitints Standard
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight">
             Why We Only Do It The Best Way
           </h2>
           <p className="mt-4 text-zinc-400 max-w-xl mx-auto">
-            We don&apos;t compromise on quality. Here is why we only offer Nano Ceramic films and use precision computer plotting.
+            We only offer Nano Ceramic films and precision computer-cut plotting.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Ceramic vs Carbon */}
-          <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+          <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-900/30 transition-colors shadow-2xl shadow-black">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <span className="p-2.5 rounded-lg bg-amber-500/10 text-amber-500 text-2xl font-bold">
+                <span className="p-2.5 rounded-lg bg-red-500/10 text-red-500 text-2xl font-bold">
                   ⚡
                 </span>
                 <div>
@@ -34,9 +34,9 @@ export default function ComparisonSection() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {/* Nano Ceramic */}
-                <div className="bg-black/40 border border-white/5 rounded-xl p-5">
-                  <h4 className="text-sm font-bold text-amber-500 uppercase tracking-wider mb-4 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                <div className="bg-black/40 border border-red-950/20 rounded-xl p-5 shadow-inner">
+                  <h4 className="text-sm font-bold text-red-500 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                     Nano Ceramic
                   </h4>
                   <ul className="space-y-3.5">
@@ -90,18 +90,14 @@ export default function ComparisonSection() {
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/5 text-center">
-              <p className="text-sm font-medium text-amber-500/80 italic">
-                Nano Ceramic = Premium Performance & Protection
-              </p>
-            </div>
+
           </div>
 
           {/* Plotter Cut vs Hand Cut */}
-          <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+          <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-900/30 transition-colors shadow-2xl shadow-black">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <span className="p-2.5 rounded-lg bg-amber-500/10 text-amber-500 text-2xl font-bold">
+                <span className="p-2.5 rounded-lg bg-red-500/10 text-red-500 text-2xl font-bold">
                   📐
                 </span>
                 <div>
@@ -114,9 +110,9 @@ export default function ComparisonSection() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {/* Plotter Cut */}
-                <div className="bg-black/40 border border-white/5 rounded-xl p-5">
-                  <h4 className="text-sm font-bold text-amber-500 uppercase tracking-wider mb-4 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                <div className="bg-black/40 border border-red-950/20 rounded-xl p-5 shadow-inner">
+                  <h4 className="text-sm font-bold text-red-500 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                     Plotter-Cut
                   </h4>
                   <ul className="space-y-3.5">
@@ -170,11 +166,7 @@ export default function ComparisonSection() {
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/5 text-center">
-              <p className="text-sm font-medium text-amber-500/80 italic">
-                Plotter-cut = Flawless results every time
-              </p>
-            </div>
+
           </div>
         </div>
       </div>

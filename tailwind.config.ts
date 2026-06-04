@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
+        signature: ["var(--font-signature)", "cursive"],
       },
     },
   },
