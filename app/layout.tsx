@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "Qualitints",
   description:
     "Premium nano-ceramic window tinting, professional detailing, paint protection film (PPF), and vehicle wraps. Precision plotter-cut fit with lifetime warranty.",
+  icons: {
+    icon: "/images/logo_tint_clear.png",
+    apple: "/images/logo_tint_clear.png",
+  },
 };
 
 export default function RootLayout({
