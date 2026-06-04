@@ -11,7 +11,7 @@ const alexBrush = Alex_Brush({
 });
 
 export const metadata: Metadata = {
-  title: "Qualitints | Automotive Styling, Window Tinting & Detailing",
+  title: "Qualitints",
   description:
     "Premium nano-ceramic window tinting, professional detailing, paint protection film (PPF), and vehicle wraps. Precision plotter-cut fit with lifetime warranty.",
 };
