@@ -24,11 +24,14 @@ const projects = [
     title: "Recent Work #2",
     tag: "PPF / Protection",
     description:
-      "Full-front PPF with self-healing urethane film. Invisible shield against rock chips, bugs, and scratches.",
+      "Mercedes Benz S580e came in for 70% ceramic all the way around 🦇🏁",
     images: [
       { src: "/images/work/p2-1.jpg", alt: "PPF — hood coverage" },
       { src: "/images/work/p2-2.jpg", alt: "PPF — front bumper wrap" },
       { src: "/images/work/p2-3.jpg", alt: "PPF — fender edge detail" },
+      { src: "/images/work/p2-4.jpg", alt: "PPF — fender edge detail" },
+      { src: "/images/work/p2-5.jpg", alt: "PPF — fender edge detail" },
+
     ],
   },
   {
@@ -41,6 +44,7 @@ const projects = [
       { src: "/images/work/p3-1.jpg", alt: "Wrap — full front view" },
       { src: "/images/work/p3-2.jpg", alt: "Wrap — side profile" },
       { src: "/images/work/p3-3.jpg", alt: "Wrap — rear view" },
+      { src: "/images/work/p3-4.jpg", alt: "Wrap — rear view" },
     ],
   },
 ];
@@ -104,11 +108,6 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
-
-        {/* Tag */}
-        <span className="absolute top-4 left-4 z-10 text-[10px] font-bold tracking-wider uppercase bg-white/90 text-black px-2.5 py-1 rounded-md">
-          {project.tag}
-        </span>
 
         {/* Photo counter */}
         <span className="absolute top-4 right-4 z-10 text-[11px] font-semibold text-white/70 bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full tabular-nums">

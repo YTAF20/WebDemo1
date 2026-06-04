@@ -81,32 +81,32 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Hours col */}
+          {/* Map col */}
           <div>
-            <h4 className="text-[11px] font-bold text-zinc-400 uppercase tracking-[0.2em] mb-5">Hours</h4>
-            <ul className="space-y-2 text-sm mb-6">
-              <li className="flex justify-between text-zinc-500">
-                <span>Monday – Friday</span>
-                <span className="text-zinc-400">9:00 AM – 5:00 PM</span>
-              </li>
-              <li className="flex justify-between text-zinc-500">
-                <span>Saturday</span>
-                <span className="text-zinc-400">9:00 AM – 5:00 PM</span>
-              </li>
-              <li className="flex justify-between text-zinc-700">
-                <span>Sunday</span>
-                <span>Closed</span>
-              </li>
-            </ul>
-            <Link
-              href="/book"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-zinc-100 text-black text-sm font-bold rounded-md transition-all uppercase tracking-wide hover:-translate-y-0.5"
+            <h4 className="text-[11px] font-bold text-zinc-400 uppercase tracking-[0.2em] mb-5">Find Us</h4>
+            <div className="rounded-xl overflow-hidden border border-white/8 mb-3">
+              <iframe
+                src="https://maps.google.com/maps?q=46560+Fremont+Blvd+%23113,+Fremont,+CA+94538&output=embed"
+                width="100%"
+                height="160"
+                style={{ border: 0, display: "block" }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Qualitints location"
+              />
+            </div>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=46560+Fremont+Blvd+%23113,+Fremont,+CA+94538"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-zinc-400 hover:text-white text-sm transition-colors"
             >
-              Book Now
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
               </svg>
-            </Link>
+              Get Directions
+            </a>
           </div>
         </div>
 
