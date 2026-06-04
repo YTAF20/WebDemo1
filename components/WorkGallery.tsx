@@ -156,8 +156,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
 
       {/* ── Card info ── */}
       <div className="p-6">
-        <h3 className="text-lg font-bold text-white">{project.title}</h3>
-        <p className="mt-2 text-sm text-zinc-400 leading-relaxed">{project.description}</p>
+        <p className="text-sm text-zinc-300 leading-relaxed">{project.description}</p>
       </div>
     </div>
   );
