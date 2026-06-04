@@ -39,12 +39,14 @@ const projects = [
     title: "Recent Work #3",
     tag: "Vehicle Wrap",
     description:
-      "Custom color-change vinyl wrap with tucked edges and a flawless, mirror-smooth finish.",
+      "Toyota Corolla Hatch came in for a full nano ceramic upgrade🏁🦇",
     images: [
       { src: "/images/work/p3-1.jpg", alt: "Wrap — full front view" },
       { src: "/images/work/p3-2.jpg", alt: "Wrap — side profile" },
       { src: "/images/work/p3-3.jpg", alt: "Wrap — rear view" },
       { src: "/images/work/p3-4.jpg", alt: "Wrap — rear view" },
+      { src: "/images/work/p3-5.jpg", alt: "Wrap — rear view" },
+
     ],
   },
 ];
