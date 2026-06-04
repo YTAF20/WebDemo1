@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative bg-black overflow-hidden pt-16 pb-10 px-4 sm:px-6">
+    <footer id="contact" className="relative bg-black overflow-hidden pt-16 pb-10 px-4 sm:px-6 scroll-mt-16">
       {/* Hairline accent at top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
@@ -25,7 +25,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-1 mb-4">
               <span className="text-2xl font-black text-white">Quali</span>
-              <span className="text-2xl font-black text-zinc-500">tints</span>
+              <span className="text-2xl font-black text-zinc-500">Tints</span>
               <span className="ml-1.5 w-1.5 h-1.5 rounded-full bg-white mb-0.5" />
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed mb-5 max-w-[220px]">

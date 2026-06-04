@@ -72,7 +72,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 px-4 sm:px-6 bg-[#0a0a0a]">
+    <section id="services" className="py-16 px-4 sm:px-6 bg-[#0a0a0a] scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8">
@@ -101,7 +101,7 @@ export default function Services() {
                 {s.num}
               </span>
               {/* Top accent on hover */}
-              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-white/0 via-white/20 to-red-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-white/0 via-white/20 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-5">
@@ -122,7 +122,7 @@ export default function Services() {
 
           {/* CTA tile */}
           <div className="relative bg-[#0c0c0c] p-7 overflow-hidden flex flex-col justify-between group hover:bg-[#100a0a] transition-colors duration-200">
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-white/0 via-white/15 to-red-600/0" />
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-white/0 via-white/15 to-white/0" />
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-600 mb-3">Ready?</p>
               <h3 className="text-xl font-black text-white mb-2 leading-tight">

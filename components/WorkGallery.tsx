@@ -25,7 +25,7 @@ const items = [
 
 export default function WorkGallery() {
   return (
-    <section id="work" className="py-16 px-4 sm:px-6 bg-black/70">
+    <section id="work" className="py-16 px-4 sm:px-6 bg-black/70 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <span className="text-zinc-400 text-xs font-semibold uppercase tracking-widest">

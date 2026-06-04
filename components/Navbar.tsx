@@ -25,17 +25,17 @@ export default function Navbar() {
         {/* Brand mark */}
         <Link href="/" className="flex items-center gap-1 group">
           <span className="text-xl font-black text-white tracking-tight">Quali</span>
-          <span className="text-xl font-black text-zinc-500 tracking-tight">tints</span>
+          <span className="text-xl font-black text-zinc-500 tracking-tight">Tints</span>
           <span className="ml-1.5 w-1.5 h-1.5 rounded-full bg-white mb-0.5 group-hover:scale-125 transition-transform" />
         </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-7">
           {[
-            { label: "Services", href: "#services" },
-            { label: "Our Work", href: "#work" },
-            { label: "How It Works", href: "#how-it-works" },
-            { label: "Contact", href: "#contact" },
+            { label: "Services", href: "/#services" },
+            { label: "Our Work", href: "/#work" },
+            { label: "How It Works", href: "/#how-it-works" },
+            { label: "Contact", href: "/#contact" },
           ].map(({ label, href }) => (
             <a key={label} href={href} className="nav-link text-sm text-zinc-400 hover:text-white transition-colors">
               {label}
@@ -84,10 +84,10 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-black/98 border-t border-white/5 px-4 py-5 flex flex-col gap-4">
           {[
-            { label: "Services", href: "#services" },
-            { label: "Our Work", href: "#work" },
-            { label: "How It Works", href: "#how-it-works" },
-            { label: "Contact", href: "#contact" },
+            { label: "Services", href: "/#services" },
+            { label: "Our Work", href: "/#work" },
+            { label: "How It Works", href: "/#how-it-works" },
+            { label: "Contact", href: "/#contact" },
           ].map(({ label, href }) => (
             <a key={label} href={href} className="text-sm text-zinc-400 hover:text-white transition-colors" onClick={() => setOpen(false)}>
               {label}

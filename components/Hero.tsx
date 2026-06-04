@@ -23,14 +23,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-[#0a0a0a] z-0" />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        {/* Eyebrow */}
-        <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-sm border border-white/15 bg-white/5">
-          <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-          <span className="text-zinc-300 text-xs font-bold uppercase tracking-[0.2em]">
-            Precision Plotter-Cut · Nano Ceramic Only
-          </span>
-        </div>
-
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[1.05] tracking-tight">
           Protect Your Ride.
           <br />
@@ -49,7 +41,7 @@ export default function Hero() {
             Book an Appointment
           </Link>
           <a
-            href="#services"
+            href="/#services"
             className="px-8 py-4 border border-white/15 hover:border-white/30 bg-white/3 hover:bg-white/6 text-zinc-300 hover:text-white font-semibold text-sm rounded-md transition-all uppercase tracking-wide"
           >
             View Services

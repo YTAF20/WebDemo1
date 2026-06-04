@@ -25,7 +25,7 @@ export default function BookPage() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-10 pt-8">
-            <span className="text-red-500 text-xs font-semibold uppercase tracking-widest">
+            <span className="text-zinc-400 text-xs font-semibold uppercase tracking-widest">
               Online Booking
             </span>
             <h1 className="mt-2 text-4xl font-bold">Book Your Appointment</h1>
@@ -35,9 +35,9 @@ export default function BookPage() {
           </div>
 
           {/* Pricing Disclaimer */}
-          <div className="mb-8 p-4 rounded-xl bg-red-600/10 border border-red-600/20 text-center max-w-2xl mx-auto">
+          <div className="mb-8 p-4 rounded-xl bg-white/5 border border-white/10 text-center max-w-2xl mx-auto">
             <p className="text-sm text-zinc-300">
-              <span className="text-red-500 font-semibold">Note:</span> Appointments are free to book online. Final pricing is based on your vehicle model/size, surface condition, and styling preferences, and will be confirmed via phone/text or at the start of your appointment.
+              <span className="text-white font-semibold">Note:</span> Appointments are free to book online. Final pricing is based on your vehicle model/size, surface condition, and styling preferences, and will be confirmed via phone/text or at the start of your appointment.
             </p>
           </div>
 
