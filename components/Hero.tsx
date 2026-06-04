@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const stats = [
-  { value: "500+", label: "Vehicles Serviced" },
   { value: "5★", label: "Rated" },
   { value: "~2 hrs", label: "Avg. Turnaround" },
 ];

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   BUSINESS_NAME,
   BUSINESS_PHONE,
@@ -23,10 +24,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand col */}
           <div>
-            <div className="flex items-center gap-1 mb-4">
-              <span className="text-2xl font-black text-white">Quali</span>
-              <span className="text-2xl font-black text-zinc-500">Tints</span>
-              <span className="ml-1.5 w-1.5 h-1.5 rounded-full bg-white mb-0.5" />
+            <div className="mb-4">
+              <Image
+                src="/images/logo_tint_clear.png"
+                alt="Qualitints"
+                width={140}
+                height={48}
+                className="h-11 w-auto object-contain"
+              />
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed mb-5 max-w-[220px]">
               Precision nano-ceramic tinting, PPF, detailing, and wraps. Done right the first time.
