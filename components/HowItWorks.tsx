@@ -9,7 +9,7 @@ const steps = [
     number: "02",
     title: "Get a Custom Quote",
     description:
-      "Enter your vehicle details. We'll confirm final pricing for your specific car before or at your appointment.",
+      "Enter your vehicle details. We'll confirm final pricing for your specific car before your appointment.",
   },
   {
     number: "03",
