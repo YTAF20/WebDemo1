@@ -2,34 +2,34 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Full Car Tint",
-    description: "Complete window coverage for all side and rear glass. Maximum UV block and a uniform look.",
+    title: "Window Tinting",
+    description: "Precision computer plotter-cut nano ceramic film. Maximum UV block, infrared heat rejection, and zero signal interference.",
     icon: "🚗",
-    badge: "Most Popular",
+    badge: "Nano Ceramic Only",
   },
   {
-    title: "Front 2 Windows",
-    description: "Driver and passenger windows tinted to match your existing rear factory tint.",
-    icon: "🪟",
-    badge: null,
+    title: "Professional Detailing",
+    description: "Full exterior paint restoration, clay bar treatment, interior steam clean, and deep conditioning for a showroom shine.",
+    icon: "✨",
+    badge: "Premium Care",
   },
   {
-    title: "Rear Windows Only",
-    description: "Rear side and back glass covered — great for privacy and cargo protection.",
-    icon: "🔙",
-    badge: null,
-  },
-  {
-    title: "Windshield Film",
-    description: "Clear or light shade heat-rejection film for your windshield. Legal in most states.",
+    title: "Paint Protection Film (PPF)",
+    description: "Optically clear, self-healing urethane barrier protecting your vehicle's paint from rock chips, bugs, scratches, and debris.",
     icon: "🛡️",
-    badge: "Heat Block",
+    badge: "Self-Healing",
   },
   {
-    title: "SUV / Truck Package",
-    description: "Full coverage for larger vehicles including rear windshield and all side glass.",
-    icon: "🚙",
-    badge: "Best Value",
+    title: "Vehicle Wraps",
+    description: "High-quality vinyl wraps to change your vehicle's color, finish, or texture. Fully tucked edges for a seamless paint-like look.",
+    icon: "🎨",
+    badge: "Custom Styling",
+  },
+  {
+    title: "Headlight Restoration",
+    description: "Remove heavy oxidation, yellowing, and haze. Restores crystal-clear visibility and sealed with a durable UV-blocker coat.",
+    icon: "💡",
+    badge: "Safety First",
   },
 ];
 
@@ -38,10 +38,10 @@ export default function Services() {
     <section id="services" className="py-24 px-4 sm:px-6 bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="text-amber-500 text-xs font-semibold uppercase tracking-widest">What We Offer</span>
-          <h2 className="mt-3 text-4xl sm:text-5xl font-bold">Our Services</h2>
+          <span className="text-amber-500 text-xs font-semibold uppercase tracking-widest">Our Service Menu</span>
+          <h2 className="mt-3 text-4xl sm:text-5xl font-bold">What We Offer</h2>
           <p className="mt-4 text-zinc-400 max-w-xl mx-auto">
-            We use premium films from top-tier brands to ensure lasting quality, sharp aesthetics, and maximum heat and UV rejection.
+            From precision window tinting to paint protection and color wraps, we use premium materials and certified techniques to elevate your ride.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Services() {
             <div>
               <h3 className="text-lg font-bold text-amber-400 mb-2">Ready to Book?</h3>
               <p className="text-zinc-400 text-sm">
-                Check real-time availability and reserve your slot in under 2 minutes.
+                Reserve your slot online and get a customized quote confirmed before or at your appointment.
               </p>
             </div>
             <Link
@@ -84,3 +84,4 @@ export default function Services() {
     </section>
   );
 }
+

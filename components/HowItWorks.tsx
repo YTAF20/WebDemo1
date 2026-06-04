@@ -1,21 +1,21 @@
 const steps = [
   {
     number: "01",
-    title: "Pick a Date & Time",
+    title: "Secure Your Slot",
     description:
-      "Browse real-time availability pulled directly from our calendar. Choose any open slot that works for you.",
+      "Select a convenient date and time on our calendar. Online booking is 100% free and takes under a minute.",
   },
   {
     number: "02",
-    title: "Fill in Your Details",
+    title: "Get a Custom Quote",
     description:
-      "Tell us your name, contact info, which service you want, and any notes about your vehicle.",
+      "Enter your vehicle details. We will contact you via phone or email to confirm final pricing for your specific car model.",
   },
   {
     number: "03",
-    title: "Get Confirmation",
+    title: "Fast 2-3 Hour Service",
     description:
-      "You'll receive an email confirmation right away, plus a reminder the day before your appointment.",
+      "Bring your car in at the scheduled time. Relax in our comfortable lobby or drop it off and pick it up when done.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function HowItWorks() {
           <span className="text-amber-500 text-xs font-semibold uppercase tracking-widest">Simple Process</span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-bold">How It Works</h2>
           <p className="mt-4 text-zinc-400 max-w-lg mx-auto">
-            Booking your tint appointment takes about 2 minutes — no phone calls, no waiting on hold.
+            Securing professional styling for your vehicle is simple and transparent. No deposit required.
           </p>
         </div>
 
@@ -49,3 +49,4 @@ export default function HowItWorks() {
     </section>
   );
 }
+

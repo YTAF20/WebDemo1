@@ -12,9 +12,22 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <h3 className="text-amber-500 font-bold text-lg mb-3">{BUSINESS_NAME}</h3>
-          <p className="text-zinc-400 text-sm leading-relaxed">
-            Professional window tinting for every vehicle. Quality films, expert installation, lasting results.
+          <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+            Professional window tinting, detailing, PPF, and wraps. Quality films, precision plotter-cut installation, lasting results.
           </p>
+          <a
+            href="https://www.instagram.com/qualitints/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 text-sm transition-colors"
+          >
+            <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Follow @qualitints</span>
+          </a>
         </div>
 
         <div>
