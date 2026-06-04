@@ -121,14 +121,14 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
             <button
               onClick={prev}
               aria-label="Previous photo"
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white transition-all hover:bg-black/80 hover:border-white/30 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white transition-all hover:bg-black/80 hover:border-white/30 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
             >
               <ChevronLeft />
             </button>
             <button
               onClick={next}
               aria-label="Next photo"
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white transition-all hover:bg-black/80 hover:border-white/30 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white transition-all hover:bg-black/80 hover:border-white/30 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
             >
               <ChevronRight />
             </button>

@@ -41,9 +41,9 @@ export default function HowItWorks() {
         {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {steps.map((step, i) => (
-            <div key={step.number} className="relative">
+            <div key={step.number} className="relative overflow-hidden">
               {/* Ghost number — huge, faded behind content */}
-              <span className="absolute -top-10 -left-3 text-[9rem] font-black leading-none text-white/[0.04] select-none pointer-events-none tabular-nums">
+              <span className="absolute -top-10 -left-3 text-[7rem] sm:text-[9rem] font-black leading-none text-white/[0.04] select-none pointer-events-none tabular-nums">
                 {step.number}
               </span>
 

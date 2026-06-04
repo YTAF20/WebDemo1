@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-[#0a0a0a] z-0" />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[1.05] tracking-tight">
+        <h1 className="text-[2.4rem] sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
           Protect Your Ride.
           <br />
           <span className="text-white italic">Elevate the Look.</span>

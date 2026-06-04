@@ -28,7 +28,7 @@ export default function BookPage() {
             <span className="text-zinc-400 text-xs font-semibold uppercase tracking-widest">
               Online Booking
             </span>
-            <h1 className="mt-2 text-4xl font-bold">Book Your Appointment</h1>
+            <h1 className="mt-2 text-2xl sm:text-4xl font-bold">Book Your Appointment</h1>
             <p className="mt-3 text-zinc-400">
               Select an available time slot below to schedule your styling service.
             </p>

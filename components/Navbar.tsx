@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -22,11 +23,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        {/* Brand mark */}
-        <Link href="/" className="flex items-center gap-1 group">
-          <span className="text-xl font-black text-white tracking-tight">Quali</span>
-          <span className="text-xl font-black text-zinc-500 tracking-tight">Tints</span>
-          <span className="ml-1.5 w-1.5 h-1.5 rounded-full bg-white mb-0.5 group-hover:scale-125 transition-transform" />
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo_tint_clear.png"
+            alt="Qualitints"
+            width={140}
+            height={48}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop links */}
